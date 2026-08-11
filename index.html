@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Belleza - Glow & Care</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Fuentes de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navegación -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#" class="logo">Glow<span>&</span>Care</a>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Buscar producto de belleza...">
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Descubre tu brillo natural</h1>
+    <p>Explora nuestra colección exclusiva de cuidado facial, maquillaje y capilar.</p>
+  </section>
+
+  <!-- Filtros de Categoría -->
+  <main class="main-container">
+    <div class="filter-container">
+      <button class="filter-btn active" data-category="all">Todos</button>
+      <button class="filter-btn" data-category="skincare">Cuidado Facial</button>
+      <button class="filter-btn" data-category="makeup">Maquillaje</button>
+      <button class="filter-btn" data-category="haircare">Cuidado Capilar</button>
+    </div>
+
+    <!-- Rejilla de Productos -->
+    <div class="product-grid" id="productGrid">
+      <!-- Los productos se cargan dinámicamente con JS -->
+    </div>
+  </main>
+
+  <!-- Modal para Detalle de Producto -->
+  <div class="modal" id="productModal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">&times;</span>
+      <div class="modal-body">
+        <img id="modalImage" src="" alt="Producto">
+        <div class="modal-info">
+          <span class="product-category" id="modalCategory">Categoría</span>
+          <h2 id="modalTitle">Nombre del Producto</h2>
+          <p class="modal-price" id="modalPrice">$0.00</p>
+          <p class="modal-description" id="modalDescription">Descripción detallada...</p>
+          <button class="btn-primary" id="modalActionBtn">Solicitar Información</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
