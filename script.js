@@ -27,7 +27,7 @@ const products = [
     categoryLabel: "Cuidado Capilar",
     price: "$24.00",
     badge: null,
-    image: "https://images.unsplash.com/photo-1608248597260-26463991206f?auto=format&fit=crop&q=80&w=600",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFla18SGCPNJmLuKHu1jN1hJpFL6jrsy7W3sbaR2rSzA&s",
     description: "Tratamiento nutritivo para puntas abiertas que elimina el encrespamiento y devuelve el brillo sin dejar sensación grasa."
   },
   {
